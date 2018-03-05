@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Detection Mode"
+
+          android:id="@+id/dm"
+      />
+
+
+    <item android:title="Surveillance images"
+        android:id="@+id/si"
+       />
+
+
+    <item android:title="Update Profile"
+        android:id="@+id/up"
+        />
+
+    <item android:title="Add Family Member"
+        android:id="@+id/afm"
+        />
+
+
+
+    <item android:title="Help"
+        android:id="@+id/hp"
+        />
+
+
+
+
+
+
+
+
+
+</menu>

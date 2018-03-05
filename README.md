@@ -1,0 +1,1 @@
+This is an android based home/office security app which monitors the real-time environment and informs the user about the intrusion with images using Motion detetction and face recognition techniques.

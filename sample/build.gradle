@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+
+    defaultConfig {
+        applicationId "pl.aprilapps.motiondetectorsample"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [onesignal_app_id               : "2a516209-70a9-4d7d-81d3-3615590cbb39",
+                                onesignal_google_project_number: "908228278255"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library')
+    compile files('libs/Parse-1.6.0.jar')
+    // Required for OneSignal, even if you have added FCM.
+    // Required for geotagging
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.onesignal:OneSignal:3.+@aar'
+    compile 'com.google.android.gms:play-services-gcm:11.0.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.google.firebase:firebase-database:11.0.0'
+    compile 'com.google.firebase:firebase-storage:11.0.0'
+    compile 'com.google.firebase:firebase-auth:11.0.0'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

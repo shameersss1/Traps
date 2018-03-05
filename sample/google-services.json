@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "334177506291",
+    "firebase_url": "https://traps-c8b16.firebaseio.com",
+    "project_id": "traps-c8b16",
+    "storage_bucket": "traps-c8b16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334177506291:android:6cdc4e26dd6bc8c9",
+        "android_client_info": {
+          "package_name": "pl.aprilapps.motiondetectorsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334177506291-3n1mm1gdmp36353t9qe081poas19tnrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwUk1SrPm4XPzGKFgynsVm0gg-fu7oGYw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

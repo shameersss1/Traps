@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.aprilapps.motiondetectorsample" >
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <permission
+        android:name="pl.aprilapps.motiondetectorsample.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="pl.aprilapps.motiondetectorsample.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Traps"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name=".MotionDetectionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name=".SensorsActivity" />
+        <activity
+            android:name=".NewB"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity android:name=".Home" >
+
+        </activity>
+
+        <service
+            android:name=".MyNotificationExtenderService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".View12" >
+        </activity>
+        <activity android:name=".ImageBrowser" >
+        </activity>
+        <activity android:name=".Settings" >
+        </activity>
+        <activity android:name=".Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
